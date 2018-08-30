@@ -1,0 +1,234 @@
+[2018-08-29 20:02:02] [INFO] 
+
+[2018-08-29 20:02:02] [INFO] **********test1**********
+[2018-08-29 20:02:02] [INFO] 
+
+[2018-08-29 20:02:02] [INFO] ####执行flume初始化####
+[2018-08-29 20:02:02] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 20:02:12] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:02:13] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-29 20:02:13] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:02:13] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-29 20:02:13] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:02:13] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-29 20:02:13] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 20:02:13] [INFO] 
+
+[2018-08-29 20:02:13] [INFO] **********test2**********
+[2018-08-29 20:02:13] [INFO] 
+
+[2018-08-29 20:02:13] [INFO] ####执行redis数据清除####
+[2018-08-29 20:02:13] [INFO] ####执行redis数据清除####
+[2018-08-29 20:02:13] [INFO] ####执行flume初始化####
+[2018-08-29 20:02:13] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 20:02:23] [INFO] ####执行flume初始化####
+[2018-08-29 20:02:23] [INFO] ####执行时间测试 休眠25s ####
+[2018-08-29 20:02:48] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:02:48] [INFO] ES查询结果：18856361920
+[2018-08-29 20:02:48] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:02:48] [INFO] ES查询结果：1
+[2018-08-29 20:02:48] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:02:48] [INFO] ES查询结果：--
+[2018-08-29 20:02:48] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 20:02:48] [INFO] 
+
+[2018-08-29 20:02:48] [INFO] **********test3**********
+[2018-08-29 20:02:48] [INFO] 
+
+[2018-08-29 20:02:48] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:02:48] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:02:48] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:02:48] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:02:48] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:02:48] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:02:48] [INFO] ####执行flume初始化####
+[2018-08-29 20:02:48] [INFO] ####执行时间测试 休眠15s ####
+[2018-08-29 20:03:03] [INFO] ####执行mongo校验####
+[2018-08-29 20:03:03] [INFO] mongo查询结果：[]
+[2018-08-29 20:03:03] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 280, in run_case
+    test_actual.append("mongo查询结果为:"+str(mongo_findresult[0][check_content]))
+IndexError: list index out of range
+[2018-08-29 20:03:03] [INFO] ####执行mongo校验####
+[2018-08-29 20:03:03] [INFO] mongo查询结果：[]
+[2018-08-29 20:03:03] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 280, in run_case
+    test_actual.append("mongo查询结果为:"+str(mongo_findresult[0][check_content]))
+IndexError: list index out of range
+[2018-08-29 20:03:03] [INFO] ####执行mongo校验####
+[2018-08-29 20:03:03] [INFO] mongo查询结果：[]
+[2018-08-29 20:03:03] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 280, in run_case
+    test_actual.append("mongo查询结果为:"+str(mongo_findresult[0][check_content]))
+IndexError: list index out of range
+[2018-08-29 20:07:17] [INFO] 
+
+[2018-08-29 20:07:17] [INFO] **********test1**********
+[2018-08-29 20:07:17] [INFO] 
+
+[2018-08-29 20:07:17] [INFO] ####执行flume初始化####
+[2018-08-29 20:07:17] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 20:07:27] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:07:27] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-29 20:07:27] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:07:28] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-29 20:07:28] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:07:28] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-29 20:07:28] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 20:07:28] [INFO] 
+
+[2018-08-29 20:07:28] [INFO] **********test2**********
+[2018-08-29 20:07:28] [INFO] 
+
+[2018-08-29 20:07:28] [INFO] ####执行redis数据清除####
+[2018-08-29 20:07:28] [INFO] ####执行redis数据清除####
+[2018-08-29 20:07:28] [INFO] ####执行flume初始化####
+[2018-08-29 20:07:28] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 20:07:38] [INFO] ####执行flume初始化####
+[2018-08-29 20:07:38] [INFO] ####执行时间测试 休眠25s ####
+[2018-08-29 20:08:03] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:08:03] [INFO] ES查询结果：18856361920
+[2018-08-29 20:08:03] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:08:03] [INFO] ES查询结果：1
+[2018-08-29 20:08:03] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:08:03] [INFO] ES查询结果：--
+[2018-08-29 20:08:03] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 20:08:03] [INFO] 
+
+[2018-08-29 20:08:03] [INFO] **********test3**********
+[2018-08-29 20:08:03] [INFO] 
+
+[2018-08-29 20:08:03] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:08:03] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:08:03] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:08:03] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:08:03] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:08:03] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:08:03] [INFO] ####执行flume初始化####
+[2018-08-29 20:08:03] [INFO] ####执行时间测试 休眠15s ####
+[2018-08-29 20:08:18] [INFO] ####执行mongo校验####
+[2018-08-29 20:08:18] [INFO] mongo查询结果：[]
+[2018-08-29 20:08:18] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 280, in run_case
+    test_actual.append("mongo查询结果为:"+str(mongo_findresult[0][check_content]))
+IndexError: list index out of range
+[2018-08-29 20:08:18] [INFO] ####执行mongo校验####
+[2018-08-29 20:08:18] [INFO] mongo查询结果：[]
+[2018-08-29 20:08:18] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 280, in run_case
+    test_actual.append("mongo查询结果为:"+str(mongo_findresult[0][check_content]))
+IndexError: list index out of range
+[2018-08-29 20:08:18] [INFO] ####执行mongo校验####
+[2018-08-29 20:08:18] [INFO] mongo查询结果：[]
+[2018-08-29 20:08:18] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 280, in run_case
+    test_actual.append("mongo查询结果为:"+str(mongo_findresult[0][check_content]))
+IndexError: list index out of range
+[2018-08-29 20:14:10] [INFO] 
+
+[2018-08-29 20:14:10] [INFO] **********test1**********
+[2018-08-29 20:14:10] [INFO] 
+
+[2018-08-29 20:14:10] [INFO] ####执行flume初始化####
+[2018-08-29 20:14:10] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 20:14:20] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:14:20] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-29 20:14:20] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:14:20] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-29 20:14:20] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:14:20] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-29 20:14:20] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 20:14:20] [INFO] 
+
+[2018-08-29 20:14:20] [INFO] **********test2**********
+[2018-08-29 20:14:20] [INFO] 
+
+[2018-08-29 20:14:20] [INFO] ####执行redis数据清除####
+[2018-08-29 20:14:20] [INFO] ####执行redis数据清除####
+[2018-08-29 20:14:20] [INFO] ####执行flume初始化####
+[2018-08-29 20:14:20] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 20:14:30] [INFO] ####执行flume初始化####
+[2018-08-29 20:14:30] [INFO] ####执行时间测试 休眠25s ####
+[2018-08-29 20:14:55] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:14:55] [INFO] ES查询结果：18856361920
+[2018-08-29 20:14:55] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:14:56] [INFO] ES查询结果：1
+[2018-08-29 20:14:56] [INFO] ####执行elasticsearch校验####
+[2018-08-29 20:14:56] [INFO] ES查询结果：--
+[2018-08-29 20:14:56] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 20:14:56] [INFO] 
+
+[2018-08-29 20:14:56] [INFO] **********test3**********
+[2018-08-29 20:14:56] [INFO] 
+
+[2018-08-29 20:14:56] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:14:56] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:14:56] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:14:56] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:14:56] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:14:56] [INFO] ####执行mongo数据清除####
+[2018-08-29 20:14:56] [INFO] ####执行flume初始化####
+[2018-08-29 20:14:56] [INFO] ####执行时间测试 休眠15s ####
+[2018-08-29 20:15:11] [INFO] ####执行mongo校验####
+[2018-08-29 20:15:11] [INFO] mongo查询结果：[]
+[2018-08-29 20:15:11] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 280, in run_case
+    test_actual.append("mongo查询结果为:"+str(mongo_findresult[0][check_content]))
+IndexError: list index out of range
+[2018-08-29 20:15:11] [INFO] ####执行mongo校验####
+[2018-08-29 20:15:11] [INFO] mongo查询结果：[]
+[2018-08-29 20:15:11] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 280, in run_case
+    test_actual.append("mongo查询结果为:"+str(mongo_findresult[0][check_content]))
+IndexError: list index out of range
+[2018-08-29 20:15:11] [INFO] ####执行mongo校验####
+[2018-08-29 20:15:11] [INFO] mongo查询结果：[]
+[2018-08-29 20:15:11] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 280, in run_case
+    test_actual.append("mongo查询结果为:"+str(mongo_findresult[0][check_content]))
+IndexError: list index out of range

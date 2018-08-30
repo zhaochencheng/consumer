@@ -1,0 +1,149 @@
+[2018-08-30 09:00:36] [INFO] 
+
+[2018-08-30 09:00:36] [INFO] **********test1**********
+[2018-08-30 09:00:36] [INFO] 
+
+[2018-08-30 09:00:36] [INFO] ####执行flume初始化####
+[2018-08-30 09:00:36] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-30 09:00:46] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:00:46] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-30 09:00:46] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:00:46] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-30 09:00:46] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:00:46] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 305, in run_case
+    log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
+IndexError: list index out of range
+[2018-08-30 09:00:46] [INFO] ####执行elasticsearch数据清除####
+[2018-08-30 09:00:56] [ERROR] ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host=u'192.168.45.169', port=9200): Read timed out. (read timeout=10))
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 349, in run_case
+    result = elasticsearch_run(method=method, database=database, table=table, query=content)
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 111, in elasticsearch_run
+    result = run_elasticsearch.delete_data(index=database, doc_type=table, query=query)
+  File "F:\python_project\Consumer_autoTest1\Function\Myelasticsearch.py", line 24, in delete_data
+    resp = es.delete_by_query(index=index, body=query, doc_type=doc_type)
+  File "C:\Python27\lib\site-packages\elasticsearch\client\utils.py", line 76, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\elasticsearch\client\__init__.py", line 881, in delete_by_query
+    doc_type, '_delete_by_query'), params=params, body=body)
+  File "C:\Python27\lib\site-packages\elasticsearch\transport.py", line 318, in perform_request
+    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
+  File "C:\Python27\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 179, in perform_request
+    raise ConnectionTimeout('TIMEOUT', str(e), e)
+ConnectionTimeout: ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host=u'192.168.45.169', port=9200): Read timed out. (read timeout=10))
+[2018-08-30 09:00:56] [INFO] 
+
+[2018-08-30 09:00:56] [INFO] **********test2**********
+[2018-08-30 09:00:56] [INFO] 
+
+[2018-08-30 09:00:56] [INFO] ####执行redis数据清除####
+[2018-08-30 09:00:56] [INFO] ####执行redis数据清除####
+[2018-08-30 09:00:56] [INFO] ####执行flume初始化####
+[2018-08-30 09:00:56] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-30 09:01:06] [INFO] ####执行flume初始化####
+[2018-08-30 09:01:06] [INFO] ####执行时间测试 休眠25s ####
+[2018-08-30 09:01:31] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:01:31] [INFO] ES查询结果：18856361920
+[2018-08-30 09:01:31] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:01:31] [INFO] ES查询结果：1
+[2018-08-30 09:01:31] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:01:31] [INFO] ES查询结果：--
+[2018-08-30 09:01:31] [INFO] ####执行elasticsearch数据清除####
+[2018-08-30 09:01:41] [ERROR] ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host=u'192.168.45.169', port=9200): Read timed out. (read timeout=10))
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 349, in run_case
+    result = elasticsearch_run(method=method, database=database, table=table, query=content)
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 111, in elasticsearch_run
+    result = run_elasticsearch.delete_data(index=database, doc_type=table, query=query)
+  File "F:\python_project\Consumer_autoTest1\Function\Myelasticsearch.py", line 24, in delete_data
+    resp = es.delete_by_query(index=index, body=query, doc_type=doc_type)
+  File "C:\Python27\lib\site-packages\elasticsearch\client\utils.py", line 76, in _wrapped
+    return func(*args, params=params, **kwargs)
+  File "C:\Python27\lib\site-packages\elasticsearch\client\__init__.py", line 881, in delete_by_query
+    doc_type, '_delete_by_query'), params=params, body=body)
+  File "C:\Python27\lib\site-packages\elasticsearch\transport.py", line 318, in perform_request
+    status, headers_response, data = connection.perform_request(method, url, params, body, headers=headers, ignore=ignore, timeout=timeout)
+  File "C:\Python27\lib\site-packages\elasticsearch\connection\http_urllib3.py", line 179, in perform_request
+    raise ConnectionTimeout('TIMEOUT', str(e), e)
+ConnectionTimeout: ConnectionTimeout caused by - ReadTimeoutError(HTTPConnectionPool(host=u'192.168.45.169', port=9200): Read timed out. (read timeout=10))
+[2018-08-30 09:01:41] [INFO] 
+
+[2018-08-30 09:01:41] [INFO] **********test3**********
+[2018-08-30 09:01:41] [INFO] 
+
+[2018-08-30 09:01:41] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:01:41] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:01:41] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:01:41] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:01:41] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:01:42] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:01:42] [INFO] ####执行flume初始化####
+[2018-08-30 09:01:42] [INFO] ####执行时间测试 休眠15s ####
+[2018-08-30 09:01:57] [INFO] ####执行mongo校验####
+[2018-08-30 09:01:57] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-30 08:59:54', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b87418a5e0ed98cf47c61b8')}]
+[2018-08-30 09:01:57] [INFO] ####执行mongo校验####
+[2018-08-30 09:01:57] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-30 08:59:54', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b87418a5e0ed98cf47c61b8')}]
+[2018-08-30 09:01:57] [INFO] ####执行mongo校验####
+[2018-08-30 09:01:57] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-30 08:59:54', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b87418a5e0ed98cf47c61b8')}]
+[2018-08-30 09:59:02] [INFO] 
+
+[2018-08-30 09:59:02] [INFO] **********test1**********
+[2018-08-30 09:59:02] [INFO] 
+
+[2018-08-30 09:59:02] [INFO] ####执行flume初始化####
+[2018-08-30 09:59:02] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-30 09:59:12] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:59:13] [INFO] ES查询结果：18856361920
+[2018-08-30 09:59:13] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:59:13] [INFO] ES查询结果：1
+[2018-08-30 09:59:13] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:59:13] [INFO] ES查询结果：--
+[2018-08-30 09:59:13] [INFO] ####执行elasticsearch数据清除####
+[2018-08-30 09:59:14] [INFO] ####执行redis数据清除####
+[2018-08-30 09:59:14] [INFO] 
+
+[2018-08-30 09:59:14] [INFO] **********test2**********
+[2018-08-30 09:59:14] [INFO] 
+
+[2018-08-30 09:59:14] [INFO] ####执行redis数据清除####
+[2018-08-30 09:59:14] [INFO] ####执行redis数据清除####
+[2018-08-30 09:59:14] [INFO] ####执行flume初始化####
+[2018-08-30 09:59:14] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-30 09:59:24] [INFO] ####执行flume初始化####
+[2018-08-30 09:59:24] [INFO] ####执行时间测试 休眠25s ####
+[2018-08-30 09:59:49] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:59:49] [INFO] ES查询结果：18856361920
+[2018-08-30 09:59:49] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:59:49] [INFO] ES查询结果：1
+[2018-08-30 09:59:49] [INFO] ####执行elasticsearch校验####
+[2018-08-30 09:59:49] [INFO] ES查询结果：SUCCESS
+[2018-08-30 09:59:49] [INFO] ####执行elasticsearch数据清除####
+[2018-08-30 09:59:49] [INFO] 
+
+[2018-08-30 09:59:49] [INFO] **********test3**********
+[2018-08-30 09:59:49] [INFO] 
+
+[2018-08-30 09:59:49] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:59:49] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:59:49] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:59:49] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:59:49] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:59:49] [INFO] ####执行mongo数据清除####
+[2018-08-30 09:59:49] [INFO] ####执行flume初始化####
+[2018-08-30 09:59:49] [INFO] ####执行时间测试 休眠15s ####
+[2018-08-30 10:00:04] [INFO] ####执行mongo校验####
+[2018-08-30 10:00:04] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-30 09:58:00', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b874f285e0ec753975e85a2')}]
+[2018-08-30 10:00:04] [INFO] ####执行mongo校验####
+[2018-08-30 10:00:04] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-30 09:58:00', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b874f285e0ec753975e85a2')}]
+[2018-08-30 10:00:04] [INFO] ####执行mongo校验####
+[2018-08-30 10:00:04] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-30 09:58:00', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b874f285e0ec753975e85a2')}]

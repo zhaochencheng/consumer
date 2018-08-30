@@ -1,0 +1,232 @@
+[2018-08-29 17:14:20] [INFO] 
+
+[2018-08-29 17:14:20] [INFO] **********test1**********
+[2018-08-29 17:14:20] [INFO] 
+
+[2018-08-29 17:14:20] [INFO] ####执行flume初始化####
+[2018-08-29 17:14:20] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 17:14:30] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:14:30] [INFO] ES查询结果：18856361920
+[2018-08-29 17:14:30] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:14:30] [INFO] ES查询结果：1
+[2018-08-29 17:14:30] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:14:30] [INFO] ES查询结果：--
+[2018-08-29 17:14:30] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 17:14:31] [INFO] 
+
+[2018-08-29 17:14:31] [INFO] **********test2**********
+[2018-08-29 17:14:31] [INFO] 
+
+[2018-08-29 17:14:31] [INFO] ####执行flume初始化####
+[2018-08-29 17:14:31] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 17:14:41] [INFO] ####执行flume初始化####
+[2018-08-29 17:14:41] [INFO] ####执行时间测试 休眠25s ####
+[2018-08-29 17:15:06] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:15:06] [INFO] ES查询结果：18856361920
+[2018-08-29 17:15:06] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:15:06] [INFO] ES查询结果：1
+[2018-08-29 17:15:06] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:15:06] [INFO] ES查询结果：SUCCESS
+[2018-08-29 17:15:06] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 17:15:06] [INFO] 
+
+[2018-08-29 17:15:06] [INFO] **********test3**********
+[2018-08-29 17:15:06] [INFO] 
+
+[2018-08-29 17:15:06] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:15:06] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:15:06] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:15:06] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:15:06] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:15:06] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:15:06] [INFO] ####执行flume初始化####
+[2018-08-29 17:15:06] [INFO] ####执行时间测试 休眠15s ####
+[2018-08-29 17:15:21] [INFO] ####执行mongo校验####
+[2018-08-29 17:15:21] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-29 17:13:22', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b8663b25e0e9d9e94821b68')}]
+[2018-08-29 17:15:21] [INFO] ####执行mongo校验####
+[2018-08-29 17:15:21] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-29 17:13:22', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b8663b25e0e9d9e94821b68')}]
+[2018-08-29 17:15:21] [INFO] ####执行mongo校验####
+[2018-08-29 17:15:21] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-29 17:13:22', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b8663b25e0e9d9e94821b68')}]
+[2018-08-29 17:33:41] [INFO] 
+
+[2018-08-29 17:33:41] [INFO] **********test1**********
+[2018-08-29 17:33:41] [INFO] 
+
+[2018-08-29 17:33:41] [INFO] ####执行flume初始化####
+[2018-08-29 17:33:41] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 17:33:51] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:33:52] [INFO] ES查询结果：18856361920
+[2018-08-29 17:33:52] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:33:52] [INFO] ES查询结果：1
+[2018-08-29 17:33:52] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:33:52] [INFO] ES查询结果：--
+[2018-08-29 17:33:52] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 17:33:52] [ERROR] 'test_desc'
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 369, in run_case
+    test_desc = casestep["test_desc"]
+KeyError: 'test_desc'
+[2018-08-29 17:33:52] [INFO] 
+
+[2018-08-29 17:33:52] [INFO] **********test2**********
+[2018-08-29 17:33:52] [INFO] 
+
+[2018-08-29 17:33:52] [INFO] ####执行redis数据清除####
+[2018-08-29 17:33:52] [INFO] ####执行redis数据清除####
+[2018-08-29 17:33:52] [INFO] ####执行flume初始化####
+[2018-08-29 17:33:52] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 17:34:02] [INFO] ####执行flume初始化####
+[2018-08-29 17:34:02] [INFO] ####执行时间测试 休眠25s ####
+[2018-08-29 17:34:27] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:34:27] [INFO] ES查询结果：18856361920
+[2018-08-29 17:34:27] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:34:27] [INFO] ES查询结果：1
+[2018-08-29 17:34:27] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:34:27] [INFO] ES查询结果：SUCCESS
+[2018-08-29 17:34:27] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 17:34:27] [ERROR] 'test_desc'
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 369, in run_case
+    test_desc = casestep["test_desc"]
+KeyError: 'test_desc'
+[2018-08-29 17:34:27] [INFO] 
+
+[2018-08-29 17:34:27] [INFO] **********test3**********
+[2018-08-29 17:34:27] [INFO] 
+
+[2018-08-29 17:34:27] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:34:27] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:34:27] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:34:27] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:34:27] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:34:27] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:34:27] [INFO] ####执行flume初始化####
+[2018-08-29 17:34:27] [INFO] ####执行时间测试 休眠15s ####
+[2018-08-29 17:34:42] [INFO] ####执行mongo校验####
+[2018-08-29 17:34:42] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-29 17:32:44', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b86683c5e0e9d9e94821b7c')}]
+[2018-08-29 17:34:42] [INFO] ####执行mongo校验####
+[2018-08-29 17:34:42] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-29 17:32:44', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b86683c5e0e9d9e94821b7c')}]
+[2018-08-29 17:34:42] [INFO] ####执行mongo校验####
+[2018-08-29 17:34:42] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-29 17:32:44', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b86683c5e0e9d9e94821b7c')}]
+[2018-08-29 17:34:42] [ERROR] 'test_desc'
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 369, in run_case
+    test_desc = casestep["test_desc"]
+KeyError: 'test_desc'
+[2018-08-29 17:35:08] [INFO] 
+
+[2018-08-29 17:35:08] [INFO] **********test1**********
+[2018-08-29 17:35:08] [INFO] 
+
+[2018-08-29 17:35:08] [INFO] ####执行flume初始化####
+[2018-08-29 17:35:08] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 17:35:18] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:35:18] [INFO] ES查询结果：18856361920
+[2018-08-29 17:35:18] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:35:18] [INFO] ES查询结果：1
+[2018-08-29 17:35:18] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:35:18] [INFO] ES查询结果：--
+[2018-08-29 17:35:18] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 17:35:18] [INFO] 
+
+[2018-08-29 17:35:18] [INFO] **********test2**********
+[2018-08-29 17:35:18] [INFO] 
+
+[2018-08-29 17:35:18] [INFO] ####执行redis数据清除####
+[2018-08-29 17:35:18] [INFO] ####执行redis数据清除####
+[2018-08-29 17:35:18] [INFO] ####执行flume初始化####
+[2018-08-29 17:35:19] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 17:35:29] [INFO] ####执行flume初始化####
+[2018-08-29 17:35:29] [INFO] ####执行时间测试 休眠25s ####
+[2018-08-29 17:35:54] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:35:54] [INFO] ES查询结果：18856361920
+[2018-08-29 17:35:54] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:35:54] [INFO] ES查询结果：1
+[2018-08-29 17:35:54] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:35:54] [INFO] ES查询结果：--
+[2018-08-29 17:35:54] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 17:35:54] [INFO] 
+
+[2018-08-29 17:35:54] [INFO] **********test3**********
+[2018-08-29 17:35:54] [INFO] 
+
+[2018-08-29 17:35:54] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:35:54] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:35:54] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:35:54] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:35:54] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:35:54] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:35:54] [INFO] ####执行flume初始化####
+[2018-08-29 17:35:54] [INFO] ####执行时间测试 休眠15s ####
+[2018-08-29 17:36:09] [INFO] ####执行mongo校验####
+[2018-08-29 17:36:09] [INFO] mongo查询结果：[]
+[2018-08-29 17:36:09] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 278, in run_case
+    mongo_checkresult = bijiao(relation=relation, check_content=mongo_findresult[0][check_content], Expected_results=Expected_results)
+IndexError: list index out of range
+[2018-08-29 17:36:09] [INFO] ####执行mongo校验####
+[2018-08-29 17:36:09] [INFO] mongo查询结果：[]
+[2018-08-29 17:36:09] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 278, in run_case
+    mongo_checkresult = bijiao(relation=relation, check_content=mongo_findresult[0][check_content], Expected_results=Expected_results)
+IndexError: list index out of range
+[2018-08-29 17:36:09] [INFO] ####执行mongo校验####
+[2018-08-29 17:36:09] [INFO] mongo查询结果：[]
+[2018-08-29 17:36:09] [ERROR] list index out of range
+Traceback (most recent call last):
+  File "F:/python_project/Consumer_autoTest1/Function/Run_testcase.py", line 278, in run_case
+    mongo_checkresult = bijiao(relation=relation, check_content=mongo_findresult[0][check_content], Expected_results=Expected_results)
+IndexError: list index out of range
+[2018-08-29 17:51:04] [INFO] 
+
+[2018-08-29 17:51:04] [INFO] **********test1**********
+[2018-08-29 17:51:04] [INFO] 
+
+[2018-08-29 17:51:04] [INFO] ####执行flume初始化####
+[2018-08-29 17:51:04] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 17:51:14] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:51:14] [INFO] ES查询结果：18856361920
+[2018-08-29 17:51:14] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:51:15] [INFO] ES查询结果：1
+[2018-08-29 17:51:15] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:51:15] [INFO] ES查询结果：--
+[2018-08-29 17:51:15] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 17:51:15] [INFO] 
+
+[2018-08-29 17:51:15] [INFO] **********test2**********
+[2018-08-29 17:51:15] [INFO] 
+
+[2018-08-29 17:51:15] [INFO] ####执行redis数据清除####
+[2018-08-29 17:51:15] [INFO] ####执行redis数据清除####
+[2018-08-29 17:51:15] [INFO] ####执行flume初始化####
+[2018-08-29 17:51:15] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-29 17:51:25] [INFO] ####执行flume初始化####
+[2018-08-29 17:51:25] [INFO] ####执行时间测试 休眠25s ####
+[2018-08-29 17:51:50] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:51:50] [INFO] ES查询结果：18856361920
+[2018-08-29 17:51:50] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:51:50] [INFO] ES查询结果：1
+[2018-08-29 17:51:50] [INFO] ####执行elasticsearch校验####
+[2018-08-29 17:51:50] [INFO] ES查询结果：--
+[2018-08-29 17:51:50] [INFO] ####执行elasticsearch数据清除####
+[2018-08-29 17:51:50] [INFO] 
+
+[2018-08-29 17:51:50] [INFO] **********test3**********
+[2018-08-29 17:51:50] [INFO] 
+
+[2018-08-29 17:51:50] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:51:50] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:51:50] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:51:50] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:51:50] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:51:50] [INFO] ####执行mongo数据清除####
+[2018-08-29 17:51:50] [INFO] ####执行flume初始化####
+[2018-08-29 17:51:50] [INFO] ####执行时间测试 休眠15s ####
+[2018-08-29 17:52:05] [INFO] ####执行mongo校验####
+[2018-08-29 17:52:05] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-29 17:50:05', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b866c4d5e0e9d9e94821b8b')}]
+[2018-08-29 17:52:05] [INFO] ####执行mongo校验####
+[2018-08-29 17:52:05] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-29 17:50:05', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b866c4d5e0e9d9e94821b8b')}]
+[2018-08-29 17:52:05] [INFO] ####执行mongo校验####
+[2018-08-29 17:52:05] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-29 17:50:05', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b866c4d5e0e9d9e94821b8b')}]
