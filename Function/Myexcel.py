@@ -39,7 +39,7 @@ class myexcel():
                     col = worksheet.col_values(curr_col)[0]
                     no = row[curr_col]
                     if ctype == 2:
-                        no = str(int(row[curr_col]))
+                        no = int(str(int(row[curr_col])))
                     dic[col] = no
                 L.append(dic)
             # print(L)

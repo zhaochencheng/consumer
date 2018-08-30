@@ -15,7 +15,7 @@ python_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 sys.path.append(python_path)
 import time
 import logging
-## window 环境下使用该方式导包
+# ## window 环境下使用该方式导包
 # from Consumer_autoTest1.Function.creat_excel_Report import create_excel_report
 # from Consumer_autoTest1.Function.Myexcel import myexcel
 # from Consumer_autoTest1.Config.conf import *
@@ -133,10 +133,14 @@ def get_check_variable(str):
 def bijiao(relation, check_content, Expected_results):
     if relation == "=":
         try:
+            if type(check_content) != int:
+                check_content = check_content.encode('utf-8')
             assert check_content == Expected_results
             return True
         except BaseException as E:
             print '查询结果：%s != 期望结果：%s'%(check_content,Expected_results)
+            print "查询结果",check_content, type(check_content)
+            print "期望结果",Expected_results, type(Expected_results)
             return False
     if relation == ">":
         try:
@@ -283,16 +287,16 @@ class Run_case():
                     check_condition = str(casestep['check_condition'])
                     check_content = str(casestep['check_content'])
                     relation = str(casestep['relation'])
-                    Expected_results = str(casestep['Expected_results'])
+                    Expected_results = casestep['Expected_results']
                     if casestep["assembly"] == "mongo":
                         log.info("####执行mongo校验####")
                         try:
                             mongo_findresult = mongo_run(method=check_method, database=database, table=table, query=ast.literal_eval(check_condition))
                             log.info("mongo查询结果：%s" % mongo_findresult)
                             test_actual.append("mongo:"+check_content+relation+str(mongo_findresult[0][check_content]))
-                            test_hope.append("mongo:"+check_content+relation+Expected_results)
+                            test_hope.append("mongo:"+check_content+relation+str(Expected_results))
                             mongo_checkresult = bijiao(relation=relation, check_content=mongo_findresult[0][check_content], Expected_results=Expected_results)
-                            test_result.append("mongo:"+check_content+relation+Expected_results+" is "+str(mongo_checkresult))
+                            test_result.append("mongo:"+check_content+relation+str(Expected_results)+" is "+str(mongo_checkresult))
                             check_testresult.append(mongo_checkresult)
                         except Exception as mongo_check_error:
                             log.error(mongo_check_error)
@@ -303,10 +307,10 @@ class Run_case():
                             mysql_findresult = mysql_run(method=check_method, database=database, query=check_condition)
                             log.info('查询结果：%s' % mysql_findresult)
                             test_actual.append("mysql:"+check_content+relation+str(mysql_findresult[0][0]))
-                            test_hope.append("mysql:"+check_content+relation+Expected_results)
+                            test_hope.append("mysql:"+check_content+relation+str(Expected_results))
                             mysql_checkresult = bijiao(relation=relation, check_content=mysql_findresult[0][0], Expected_results=Expected_results)
 
-                            test_result.append("mysql:"+check_content+relation+Expected_results+" is "+str(mysql_checkresult))
+                            test_result.append("mysql:"+check_content+relation+str(Expected_results)+" is "+str(mysql_checkresult))
                             check_testresult.append(mysql_checkresult)
                         except Exception as mysql_check_error:
                             log.error(mysql_check_error)
@@ -317,9 +321,9 @@ class Run_case():
                             es_findresult = elasticsearch_run(method=check_method, database=database, table=table, query=check_condition)
                             log.info("ES查询结果：%s" % es_findresult['hits']['hits'][0]['_source'][check_content])
                             test_actual.append("elasticsearch:"+check_content+relation+str(es_findresult['hits']['hits'][0]['_source'][check_content]))
-                            test_hope.append("elasticsearch:"+check_content+relation+Expected_results)
+                            test_hope.append("elasticsearch:"+check_content+relation+str(Expected_results))
                             es_checkresult = bijiao(relation=relation, check_content=es_findresult['hits']['hits'][0]['_source'][check_content], Expected_results=Expected_results)
-                            test_result.append("elasticsearch:"+check_content+relation+Expected_results+" is "+str(es_checkresult))
+                            test_result.append("elasticsearch:"+check_content+relation+str(Expected_results)+" is "+str(es_checkresult))
                             check_testresult.append(es_checkresult)
                         except Exception as es_check_error:
                             log.error(es_check_error)
@@ -330,9 +334,9 @@ class Run_case():
                             redis_findresult = redis_run(method=check_method, database=database, key=check_condition)
                             log.info("redis查询结果为：%s" % redis_findresult)
                             test_actual.append("redis:"+check_content+relation+str(redis_findresult[0]))
-                            test_hope.append("redis:"+check_content+relation+Expected_results)
+                            test_hope.append("redis:"+check_content+relation+str(Expected_results))
                             redis_checkresult = bijiao(relation=relation, check_content=ast.literal_eval(redis_findresult[0])[check_content], Expected_results=Expected_results)
-                            test_result.append("redis:"+check_content+relation+Expected_results+" is "+str(redis_checkresult))
+                            test_result.append("redis:"+check_content+relation+str(Expected_results)+" is "+str(redis_checkresult))
                             check_testresult.append(redis_checkresult)
                         except Exception as redis_check_error:
                             log.error(redis_check_error)

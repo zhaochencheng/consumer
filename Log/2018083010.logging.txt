@@ -1,0 +1,75 @@
+[2018-08-30 10:57:45] [INFO] 
+
+[2018-08-30 10:57:45] [INFO] **********test1**********
+[2018-08-30 10:57:45] [INFO] 
+
+[2018-08-30 10:57:45] [INFO] ####执行flume初始化####
+[2018-08-30 10:57:45] [INFO] headers:{"thirdParty":"false", "s.n":"drip-sms-record", "cpname":"BaseAbility", "port":"8189", "localip":"127.0.0.1", "ismonitor":"false", "currentQueueSize":"0", "isbyte":"false", "room":"hefei", "collectionName":"drip-sms-record1", "timestamp":"1535591931000","event":"smsSendRecord"}
+body:room~hefeilogtype~smsSendRecord11_0request~[{"appid":"100IME","channel":"tencent","content":"【科大讯飞test】您好，您本次操作的验证码为1452，序号为725。请在50分钟内使用，过期无效。","extra":"--","ltm":"--","phone":"18856361920","sid":"14:110321731234","status":"--","stm":"2018-08-28 14:53:58","tid":"1"}]localip~127.0.0.1cpname~BaseAbilityappid~CB2W28VAevent~smsSendRecord
+[2018-08-30 10:57:45] [INFO] ####执行flume初始化--完成####
+[2018-08-30 10:57:45] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-30 10:57:55] [INFO] ####执行elasticsearch校验####
+[2018-08-30 10:57:55] [INFO] ES查询结果：18856361920
+[2018-08-30 10:57:55] [INFO] ####执行elasticsearch校验####
+[2018-08-30 10:57:55] [INFO] ES查询结果：1
+[2018-08-30 10:57:55] [INFO] ####执行elasticsearch校验####
+[2018-08-30 10:57:55] [INFO] ES查询结果：--
+[2018-08-30 10:57:55] [INFO] ####执行elasticsearch数据清除####
+[2018-08-30 10:57:55] [INFO] ####执行elasticsearch数据清除--完成####
+[2018-08-30 10:57:55] [INFO] ####执行redis数据清除####
+[2018-08-30 10:57:55] [INFO] ####执行redis数据清除--完成####
+[2018-08-30 10:57:55] [INFO] 
+
+[2018-08-30 10:57:55] [INFO] **********test2**********
+[2018-08-30 10:57:55] [INFO] 
+
+[2018-08-30 10:57:55] [INFO] ####执行redis数据清除####
+[2018-08-30 10:57:55] [INFO] ####执行redis数据清除--完成####
+[2018-08-30 10:57:55] [INFO] ####执行redis数据清除####
+[2018-08-30 10:57:55] [INFO] ####执行redis数据清除--完成####
+[2018-08-30 10:57:55] [INFO] ####执行flume初始化####
+[2018-08-30 10:57:55] [INFO] headers:{"thirdParty":"false", "s.n":"drip-sms-record", "cpname":"BaseAbility", "port":"8189", "localip":"127.0.0.1", "ismonitor":"false", "currentQueueSize":"0", "isbyte":"false", "room":"hefei", "collectionName":"drip-sms-record1", "timestamp":"1535592051000","event":"smsSendRecord"}
+body:room~hefeilogtype~smsSendRecord11_0request~[{"appid":"100IME","channel":"tencent","content":"【科大讯飞test】您好，您本次操作的验证码为1452，序号为725。请在50分钟内使用，过期无效。","extra":"--","ltm":"--","phone":"18856361920","sid":"1:1734612311232313212","status":"--","stm":"2018-08-28 15:53:58","tid":"1"}]localip~127.0.0.1cpname~BaseAbilityappid~CB2W28VAevent~smsSendRecord
+[2018-08-30 10:57:55] [INFO] ####执行flume初始化--完成####
+[2018-08-30 10:57:55] [INFO] ####执行时间测试 休眠10s ####
+[2018-08-30 10:58:05] [INFO] ####执行flume初始化####
+[2018-08-30 10:58:06] [INFO] headers:{"thirdParty":"false", "s.n":"drip-sms-record1", "cpname":"BaseAbility", "port":"8189", "localip":"127.0.0.1", "ismonitor":"false", "currentQueueSize":"0", "isbyte":"false", "room":"hefei", "collectionName":"drip-sms-record1", "timestamp":"1535592055000","event":"smsSendRecord"}
+body:room~hefeilogtype~drip-sms-record11_0request~[{"extra":"用户短信送达成功","ltm":"2018-08-28 15:55:58","sid":"1:1734612311232313212","status":"SUCCESS"}]localip~127.0.0.1cpname~BaseAbilityappid~CB2W28VAevent~smsCallbackRecord
+[2018-08-30 10:58:06] [INFO] ####执行flume初始化--完成####
+[2018-08-30 10:58:06] [INFO] ####执行时间测试 休眠25s ####
+[2018-08-30 10:58:31] [INFO] ####执行elasticsearch校验####
+[2018-08-30 10:58:31] [INFO] ES查询结果：18856361920
+[2018-08-30 10:58:31] [INFO] ####执行elasticsearch校验####
+[2018-08-30 10:58:31] [INFO] ES查询结果：1
+[2018-08-30 10:58:31] [INFO] ####执行elasticsearch校验####
+[2018-08-30 10:58:31] [INFO] ES查询结果：SUCCESS
+[2018-08-30 10:58:31] [INFO] ####执行elasticsearch数据清除####
+[2018-08-30 10:58:31] [INFO] ####执行elasticsearch数据清除--完成####
+[2018-08-30 10:58:31] [INFO] 
+
+[2018-08-30 10:58:31] [INFO] **********test3**********
+[2018-08-30 10:58:31] [INFO] 
+
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除####
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除--完成####
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除####
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除--完成####
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除####
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除--完成####
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除####
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除--完成####
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除####
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除--完成####
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除####
+[2018-08-30 10:58:31] [INFO] ####执行mongo数据清除--完成####
+[2018-08-30 10:58:31] [INFO] ####执行flume初始化####
+[2018-08-30 10:58:31] [INFO] headers:{"thirdParty":"false", "s.n":"drip-sms-record", "cpname":"BaseAbility", "port":"8189", "localip":"127.0.0.1", "ismonitor":"false", "currentQueueSize":"0", "isbyte":"false", "room":"hefei", "collectionName":"drip-sms-record1", "timestamp":"1535592115000","event":"smsSendRecord"}
+body:room~hefeilogtype~smsSendRecord11_0request~[{"appid":"100IME","channel":"tencent","content":"【科大讯飞test】您好，您本次操作的验证码为074665，序号为72555。请在50分钟内使用，过期无效。","extra":"--","ltm":"--","phone":"18856361920","sid":"14:10321731277","status":"--","stm":"2018-08-29 18:26:58","tid":"1"}]localip~127.0.0.1cpname~BaseAbilityappid~CB2W28VAevent~smsSendRecord
+[2018-08-30 10:58:31] [INFO] ####执行flume初始化--完成####
+[2018-08-30 10:58:31] [INFO] ####执行时间测试 休眠15s ####
+[2018-08-30 10:58:46] [INFO] ####执行mongo校验####
+[2018-08-30 10:58:46] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-30 10:58:31', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b875d575e0ec753975e85b4')}]
+[2018-08-30 10:58:46] [INFO] ####执行mongo校验####
+[2018-08-30 10:58:46] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-30 10:58:31', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b875d575e0ec753975e85b4')}]
+[2018-08-30 10:58:46] [INFO] ####执行mongo校验####
+[2018-08-30 10:58:46] [INFO] mongo查询结果：[{u'ChargedCount': 0, u'UpdateTime': u'2018-08-30 10:58:31', u'StatisticsTime': u'2018-08-29', u'SuccessCount': 0, u'TotalCount': 1, u'Appid': u'100IME', u'_id': ObjectId('5b875d575e0ec753975e85b4')}]

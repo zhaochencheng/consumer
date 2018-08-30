@@ -27,32 +27,32 @@ flumeport = 32000
 
 
 
-#
-# #日志存放位置
-log_filepath = '/usr/server/dripSMS/consumer/Consumer_autoTest1/Log/'
-#
-# #用例信息
-excel_path = '/usr/server/dripSMS/consumer/Consumer_autoTest1/Config/case.xlsx'
-sheelname = "Sheet4"
-#
-# #用例执行环境
-case_name = '短信消息插件自动化调试'
-case_environment = '集成测试环境'
-case_version = '1.0.0'
-# #报告路径
-report_path = '/usr/server/dripSMS/consumer/Consumer_autoTest1/Test_report/report.xlsx'
-
-# # 日志存放位置
-# log_filepath = "F:\\python_project\\Consumer_autoTest1\\Log\\"
-# # 用例信息
-# excel_path = 'F:\\python_project\\Consumer_autoTest1\\Config\\case.xlsx'
-# sheelname = "Sheet4"
-# # 用例执行环境
+# #
+# # #日志存放位置
+# log_filepath = '/usr/server/dripSMS/consumer/Consumer_autoTest1/Log/'
+# #
+# # #用例信息
+# excel_path = '/usr/server/dripSMS/consumer/Consumer_autoTest1/Config/case.xlsx'
+# sheelname = "Sheet5"
+# #
+# # #用例执行环境
 # case_name = '短信消息插件自动化调试'
 # case_environment = '集成测试环境'
-# case_version = '1.0.1'
-# # 报告路径
-# report_path = 'F:\\python_project\\Consumer_autoTest1\\Test_report\\report.xlsx'
+# case_version = '1.0.0'
+# # #报告路径
+# report_path = '/usr/server/dripSMS/consumer/Consumer_autoTest1/Test_report/report.xlsx'
+
+# 日志存放位置
+log_filepath = "F:\\python_project\\Consumer_autoTest1\\Log\\"
+# 用例信息
+excel_path = 'F:\\python_project\\Consumer_autoTest1\\Config\\case.xlsx'
+sheelname = "Sheet4"
+# 用例执行环境
+case_name = '短信消息插件自动化调试'
+case_environment = '集成测试环境'
+case_version = '1.0.1'
+# 报告路径
+report_path = 'F:\\python_project\\Consumer_autoTest1\\Test_report\\report.xlsx'
 
 #邮箱配置
 issendmail = False
