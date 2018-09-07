@@ -13,6 +13,7 @@ class myMongo():
         self.port = port
     def find_One(self, database, collection, query):
         '''
+        查找符合query 语句的第一条结果
 
         :param database:
         :param collection:
@@ -26,6 +27,7 @@ class myMongo():
         return result
     def find_all(self, database, collection, query):
         '''
+        查找符合query 语句的所有结果
 
         :param database:
         :param collection:
@@ -38,36 +40,85 @@ class myMongo():
         result = collections.find(query)
         return list(result)
     def insert_One(self, database, collection, query):
+        '''
+        插入Insert a single document
+
+        :param database:
+        :param collection:
+        :param query:
+        :return:
+        '''
         client = MongoClient(self.host, int(self.port))
         db = client[database]
         collections = db[collection]
         result = collections.insert_one(query)
         return result
     def insert_Many(self, database, collection, query):
+        '''
+        Insert an iterable of documents
+
+        :param database:
+        :param collection:
+        :param query:
+        :return:
+        '''
         client = MongoClient(self.host, int(self.port))
         db = client[database]
         collections = db[collection]
         result = collections.insert_many(query)
         return result
     def remove(self, database, collection, query):
+        '''
+        删除 符合query条件的所有数据 ---- 慎用
+
+        :param database:
+        :param collection:
+        :param query:
+        :return:
+        '''
         client = MongoClient(self.host, int(self.port))
         db = client[database]
         collections = db[collection]
         result = collections.remove(query)
         return result
     def delete_One(self,database, collection, query):
+        '''
+        删除 符合query条件的第一条结果
+
+        :param database:
+        :param collection:
+        :param query:
+        :return:
+        '''
         client = MongoClient(self.host, int(self.port))
         db = client[database]
         collections = db[collection]
         result = collections.delete_one(query)
         return result
     def delete_Many(self, database, collection, query):
+        '''
+        删除 符合query条件的所有数据
+
+        :param database:
+        :param collection:
+        :param query:
+        :return:
+        '''
         client = MongoClient(self.host, int(self.port))
         db = client[database]
         collections = db[collection]
         result = collections.delete_many(query)
         return result
     def update_Many(self, database, collection,filter, query):
+        '''
+        更新符合条件的数据
+
+        :param database:
+        :param collection:
+        :param filter:
+        :param query:
+        :return:
+        '''
         client = MongoClient(self.host, int(self.port))
         db = client[database]
         collections = db[collection]

@@ -63,8 +63,6 @@ def get_excelcase(excel_path,sheelname):
         if testList != []:
             allcase_info.append(testList)
     return allcase_info
-def get_pycase(py_path):
-    pass
 def handler_Body(body):
     '''
     将body格式转换为要求的格式
@@ -130,7 +128,8 @@ def get_check_variable(str):
         return result[1]
     else:
         return ""
-def bijiao(relation, check_content, Expected_results):
+def bijiao(relation, checkcontent, Expected_results):
+    check_content = str(checkcontent)
     if relation == "=":
         try:
             if type(check_content) != int:
@@ -425,9 +424,9 @@ if __name__ == '__main__':
         test_excel.create_testinformation(worksheet=worksheet2, testsum=len(casedata["info"]), data=casedata)
     except Exception as E:
         print E
-    #判断是否需要发送邮件
-    if issendmail == True:
-        mail = myMail()
-        mail.send_mail(sender, psw, receiver, smtp_server, report_path, port)
-    else:
-        pass
+    # #判断是否需要发送邮件
+    # if issendmail == True:
+    #     mail = myMail()
+    #     mail.send_mail(sender, psw, receiver, smtp_server, report_path, port)
+    # else:
+    #     pass
