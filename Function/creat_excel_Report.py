@@ -85,6 +85,7 @@ class create_excel_report():
         self.write_center(worksheet, "F3", "分数", self.workbook)
         worksheet.merge_range('F4:F6', data['pass_rate'], self.get_format_center(self.workbook))
         self.create_pie(workbook=self.workbook, worksheet=worksheet)
+        # self.workbook.close()
     def create_testinformation(self, worksheet, testsum, data):
         # 设置列行的宽高
         worksheet.set_column("A:A", 30)
@@ -125,3 +126,20 @@ class create_excel_report():
             self.write_center(worksheet, "H"+str(testsum+2), str(item["test_checkresult"]), self.workbook)
             testsum = testsum -1
         self.workbook.close()
+# if __name__ == '__main__':
+#     report_path = "F:\\python_project\\Consumer_autoTest1\\Test_report\\report.xlsx"
+#     test_excel = create_excel_report(report_path)
+#     worksheet = test_excel._add_worksheet("测试总览")
+#     worksheet2 = test_excel._add_worksheet("测试详情")
+#     result = {'test_name': '213', 'test_version': '1.0.1', 'test_language': 'python', 'test_environment': '', 'test_sum': "", 'test_success': '', 'test_failed': '', 'test_date': '', 'pass_rate': ""   }
+#     casedata = {"info": [{"test_num": " ", "test_name": ' ', "test_desc": " ", "test_parma": " ", "test_hope": " ","test_actual": " ", "test_result": " ", "test_checkresult": " "}]}
+#     test_excel.create_testinstruction(worksheet=worksheet, data=result)
+#     test_excel.create_testinformation(worksheet=worksheet2, testsum=int(12), data=casedata)
+    # try:
+    #     test_excel.create_testinstruction(worksheet=worksheet, data=result)
+    # except Exception as E:
+    #     print E
+    # try:
+    #     test_excel.create_testinformation(worksheet=worksheet2, testsum=12, data=casedata)
+    # except Exception as E:
+    #     print E
